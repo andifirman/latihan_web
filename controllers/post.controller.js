@@ -9,7 +9,7 @@ module.exports = {
       posts
     });
   },
-
+  // Create Post :D
   create: async (req, res) => {
     return res.render('post/create');
   },
