@@ -11,6 +11,7 @@ router.get('/', indexController.index);
 router.get('/posts', postController.index);
 router.get('/posts/create', postController.create);
 router.post('/posts/store', postController.store);
+router.put('/posts/update',postController.index);
 
 // domain.com = /login;
 

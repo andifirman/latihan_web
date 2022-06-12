@@ -48,3 +48,15 @@ app.listen(config.port, () => {
   console.log('Server is running on port ' + config.port);
   console.log('Visit http://localhost:' + config.port + '/');
 });
+app.put('/update',(req,res)=>{// Update function
+  const id=req.body.id;
+  db.query(),
+  (err,result)=>{
+    if(err){
+      console.log(err)
+    }
+    else{
+      res.send(result)
+    }
+  }
+})
